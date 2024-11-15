@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de registro para DAPH fotografía y diseño">
+    <title>DAPH | Fotografía y Diseño </title>
+    <link rel="stylesheet" href="css/styles-min.css" />
+    <link rel="icon" type="image/ico" href="img/icon_logo.png"/>
+</head>
+
+<body>
+    <div class="container" role="banner">
+        <img src="img/logo_violeta_rosa.webp" alt="logo" />
+        <h1>DAPH FOTOGRAFÍA Y VIDEO</h1>
+    </div>
+    <h2>
+        Más de 15 años de experiencia dedicada a capturar y crear imágenes que
+        impactan.
+    </h2>
+
+    <div class="container2" role="main">
+        <div class="image">
+            <picture>
+
+                <source media="(max-width: 576px)" srcset="img/foto_hero_pequena.webp" />
+                <source media="(min-width: 577px) and (max-width: 768px)" srcset="img/foto_hero_mediana.webp" />
+                <source media="(min-width: 769px)" srcset="img/foto_hero_big.webp" />
+                <img src="img/foto_hero_big.webp" alt="Foto hero" />
+
+
+            </picture>
+        </div>
+        <div class="form-container">
+            <h3>
+                Obtén un 20% de descuento en tu próxima sesión fotográfica <br>
+                rellenando este formulario
+            </h3>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required />
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required />
+
+                <button type="submit" class="btn-send"><strong> Enviar </strong> </button>
+            </form>
+        </div>
+    </div>
+
+    <p>
+        Escoge tu proyecto, desde retratos personales y fotografía de eventos,
+        hasta el desarrollo de campañas publicitarias, branding visual y diseño
+        multimedia. <br>Cada proyecto es una fusión de creatividad y profesionalismo.
+    </p> <br>
+
+
+    <div class="gallery">
+        <div class="column">
+            <a href="http://localhost:10016/fotografia-de-moda/?preview_id=157&preview_nonce=792406d170&preview=true">
+                <h4>FOTOGRAFÍA DE MODA</h4> <br>
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/foto_moda_pequena.webp" />
+                    <source media="(min-width: 577px) and (max-width: 768px)" srcset="img/foto_moda_mediana.webp" />
+                    <source media="(min-width: 769px)" srcset="img/foto_moda_big.webp" />
+                    <img src="img/foto_moda_big.webp" alt="Foto de moda" />
+                </picture>
+            </a>
+        </div>
+        <div class="column">
+            <a href="http://localhost:10016/fotografia-creativa/?preview_id=178&preview_nonce=19f88504d5&preview=true">
+                <h4>FOTOGRAFÍA EDITORIAL</h4><br>
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/foto_editorial_pequena.webp" />
+                    <source media="(min-width: 577px) and (max-width: 768px)"
+                        srcset="img/foto_editorial_mediana.webp" />
+                    <source media="(min-width: 769px)" srcset="img/foto_editorial_big.webp" />
+                    <img src="img/foto_editorial_big.webp" alt="Foto editorial" />
+                </picture>
+            </a>
+        </div>
+        <div class="column">
+            <a
+                href="http://localhost:10016/fotografia-corporativa/?preview_id=172&preview_nonce=da9948833c&preview=true">
+                <h4>RETRATO CORPORATIVO</h4><br>
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/foto_corporativa_pequena.webp" />
+                    <source media="(min-width: 577px) and (max-width: 768px)"
+                        srcset="img/foto_corporativa_mediana.webp" />
+                    <source media="(min-width: 769px)" srcset="img/foto_corporativa_big.webp" />
+                    <img src="img/foto_corporativa_big.webp" alt="Foto editorial" />
+                </picture>
+            </a>
+        </div>
+        <div class="column">
+            <a href="http://localhost:10016/bodas/?preview_id=184&preview_nonce=d7414d2c7c&preview=true">
+                <h4>RETRATO FAMILIAR</h4><br>
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/foto_familiar_pequena.webp" />
+                    <source media="(min-width: 577px) and (max-width: 768px)" srcset="img/foto_familiar_mediana.webp" />
+                    <source media="(min-width: 769px)" srcset="img/foto_familiar_big.webp" />
+                    <img src="img/foto_familiar_big.webp" alt="Foto familiar" />
+                </picture>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/deirdreabril_ph/" target="_blank" aria-label="Instagram">
+                    <img src="img/instagram.svg" alt="Instagram" />
+                </a>
+                <a href="https://www.facebook.com/deirdreabrilph" target="_blank" aria-label="Facebook">
+                    <img src="img/facebook.svg" alt="Facebook" />
+                </a>
+                <a href="https://wa.me/+34641296965" target="_blank" aria-label="WhatsApp">
+                    <img src="img/whatsapp.svg" alt="WhatsApp" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

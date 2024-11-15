@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Aboreto";
+  src: url("fonts/Aboreto-Regular.woff2") format("truetype");
+  font-weight: regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bellota_text_regular";
+  src: url("fonts/BellotaText-Regular.woff2") format("truetype");
+  font-weight: regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bellota_text_italic";
+  src: url("fonts/BellotaText-Italic.woff2") format("truetipe");
+  font-weight: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bellota_text_bold";
+  src: url("fonts/BellotaText-Bold.woff2") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+}
+
+.logo {
+  width: 30%;
+  max-width: 100px;
+  border-radius: 10px;
+}
+
+.container2 {
+  display: flex;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  font-family: "Aboreto";
+  margin: 0 auto;
+}
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.form-container {
+  flex: 1;
+  padding: 20px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #b54da0;
+  border-radius: 4px;
+}
+button {
+  padding: 10px 60px;
+  margin: 5px;
+  border: 1px solid #b54da0;
+  border-radius: 4px;
+  background-color: #b54da0;
+  cursor: pointer;
+  font-family: "Aboreto";
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column; /* Cambia el diseño de fila a columna */
+  }
+
+  .image {
+    width: 100%; /* Ajusta el ancho de la imagen */
+  }
+
+  .form-container {
+    width: 100%; /* Ajusta el ancho del formulario */
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 90%; /* Ajusta el ancho de los inputs */
+  }
+
+  button {
+    width: 85%; /* Ajusta el ancho del botón */
+  }
+}
+
+@media (max-width: 480px) {
+  .container2 {
+    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .image img {
+    width: 80%; /* Ajusta el ancho de la imagen en pantallas pequeñas */
+  }
+
+  .form-container {
+    padding: 10px; /* Reduce el padding del formulario en pantallas pequeñas */
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 5px; /* Reduce el padding de los inputs en pantallas pequeñas */
+  }
+
+  button {
+    padding: 6px; /* Reduce el padding del botón en pantallas pequeñas */
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 10px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.column {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Para evitar que el contenido se desborde */
+  text-align: center; /* Centrar el texto */
+}
+.column img {
+  width: 100%; /* Ancho completo de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+.column h3 {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+a {
+  text-decoration: none;
+  color: #b54da0;
+  font-family: "Aboreto";
+}
+
+.footer {
+  background-color: #f8f8f8; /* Color de fondo del footer */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centrar el texto */
+}
+
+.footer-container {
+  max-width: 1000px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.social-icons {
+  display: flex; /* Usar flexbox para alinear los iconos */
+  justify-content: center; /* Centrar los iconos horizontalmente */
+  gap: 50px; /* Espacio entre los iconos */
+  margin-top: 10px; /* Espacio superior */
+}
+
+.social-icons a img {
+  width: 20px; /* Ancho de los iconos */
+  height: auto; /* Mantener la proporción */
+  transition: transform 0.3s; /* Animación de transición */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Efecto de hover */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .social-icons img {
+    width: 35px; /* Reducir el tamaño de los iconos en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons img {
+    width: 30px; /* Reducir aún más el tamaño de los iconos en pantallas muy pequeñas */
+  }
+}
+
+
+h1 {
+  margin: 0;
+  font-family: "Aboreto";
+  color: #b54da0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Reduce el tamaño del texto en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1rem; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+  }
+}
+
+h2 {
+  font-family: "Bellota_text_regular";
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.5rem; /* Reduce el tamaño del texto en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 10px; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+  }
+}
+
+h3 {
+  font-family: "Bellota_text_bold";
+  color: black;
+  text-align: right;
+  margin: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 2.5rem; /* Reduce el tamaño del texto en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1rem; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+  }
+}
+
+h4 {
+  font-family: "Aboreto";
+  color: #b54da0;
+}
+
+p {
+  font-family: "Bellota_text_regular";
+  color: black;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 2.5rem; /* Reduce el tamaño del texto en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 13px; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+  }
+}
+
+
